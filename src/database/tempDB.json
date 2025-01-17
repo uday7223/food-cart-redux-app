@@ -1,0 +1,70 @@
+{
+    "foodItems": [
+      {
+        "imageUrl": "/src/assets/pizza.jpg",
+        "name": "Pizza Margherita",
+        "price": "12.99",
+        "restaurant": "Pizza Palace",
+        "place": "New York"
+       
+      },
+      {
+        "imageUrl": "/src/assets/Butter Chicken.jpg",
+        "name": "Butter Chicken",
+        "price": "15.99",
+        "restaurant": "Indian Curry House",
+        "place": "London"
+      },
+      {
+        "imageUrl": "/src/assets/Sushi Roll.jpg",
+        "name": "Sushi Roll",
+        "price": "8.99",
+        "restaurant": "Tokyo Sushi",
+        "place": "Tokyo"
+      },
+      {
+        "imageUrl": "/src/assets/Pad Thai.jpg",
+        "name": "Pad Thai",
+        "price": "10.99",
+        "restaurant": "Thai Kitchen",
+        "place": "Bangkok"
+      },
+      {
+        "imageUrl": "/src/assets/burger.jpg",
+        "name": "Burger",
+        "price": "7.99",
+        "restaurant": "Burger Joint",
+        "place": "New York"
+      },
+      {
+        "imageUrl": "/src/assets/tacos.jpg",
+        "name": "Tacos",
+        "price": "5.99",
+        "restaurant": "Taco Shack",
+        "place": "Mexico City"
+      },
+      {
+        "imageUrl": "/src/assets/spaghetti.jpg",
+        "name": "Spaghetti Carbonara",
+        "price": "11.99",
+        "restaurant": "Italian Bistro",
+        "place": "Rome"
+      },
+      {
+        "imageUrl": "/src/assets/fries.jpg",
+        "name": "French Fries",
+        "price": "3.99",
+        "restaurant": "Fast Food Corner",
+        "place": "Anywhere"
+      },
+      {
+        "imageUrl": "/src/assets/burger.jpg",
+        "name": "Burger",
+        "price": "7.99",
+        "restaurant": "Burger Joint",
+        "place": "New York"
+      }
+     
+
+    ]
+}
