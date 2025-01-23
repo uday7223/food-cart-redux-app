@@ -11,7 +11,7 @@ function App() {
      <div className="global">
 
      <Header />
-          <div className="d-flex flex-row">
+          <div className="col-md-12 d-flex">
             <FoodList />
             <Cart />
           </div>

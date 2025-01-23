@@ -1,70 +1,204 @@
 {
-    "foodItems": [
-      {
-        "imageUrl": "/src/assets/pizza.jpg",
-        "name": "Pizza Margherita",
-        "price": "12.99",
-        "restaurant": "Pizza Palace",
-        "place": "New York"
-       
-      },
-      {
-        "imageUrl": "/src/assets/Butter Chicken.jpg",
-        "name": "Butter Chicken",
-        "price": "15.99",
-        "restaurant": "Indian Curry House",
-        "place": "London"
-      },
-      {
-        "imageUrl": "/src/assets/Sushi Roll.jpg",
-        "name": "Sushi Roll",
-        "price": "8.99",
-        "restaurant": "Tokyo Sushi",
-        "place": "Tokyo"
-      },
-      {
-        "imageUrl": "/src/assets/Pad Thai.jpg",
-        "name": "Pad Thai",
-        "price": "10.99",
-        "restaurant": "Thai Kitchen",
-        "place": "Bangkok"
-      },
-      {
-        "imageUrl": "/src/assets/burger.jpg",
-        "name": "Burger",
-        "price": "7.99",
-        "restaurant": "Burger Joint",
-        "place": "New York"
-      },
-      {
-        "imageUrl": "/src/assets/tacos.jpg",
-        "name": "Tacos",
-        "price": "5.99",
-        "restaurant": "Taco Shack",
-        "place": "Mexico City"
-      },
-      {
-        "imageUrl": "/src/assets/spaghetti.jpg",
-        "name": "Spaghetti Carbonara",
-        "price": "11.99",
-        "restaurant": "Italian Bistro",
-        "place": "Rome"
-      },
-      {
-        "imageUrl": "/src/assets/fries.jpg",
-        "name": "French Fries",
-        "price": "3.99",
-        "restaurant": "Fast Food Corner",
-        "place": "Anywhere"
-      },
-      {
-        "imageUrl": "/src/assets/burger.jpg",
-        "name": "Burger",
-        "price": "7.99",
-        "restaurant": "Burger Joint",
-        "place": "New York"
-      }
-     
-
-    ]
+  "foodItems": [
+    {
+      "id": 1,
+      "imageUrl": "/src/assets/pizza.jpg",
+      "name": "Pizza Margherita",
+      "price": "12.99",
+      "restaurant": "Pizza Palace",
+      "place": "New York"
+    },
+    {
+      "id": 2,
+      "imageUrl": "/src/assets/Butter Chicken.jpg",
+      "name": "Butter Chicken",
+      "price": "15.99",
+      "restaurant": "Indian Curry House",
+      "place": "London"
+    },
+    {
+      "id": 3,
+      "imageUrl": "/src/assets/Sushi Roll.jpg",
+      "name": "Sushi Roll",
+      "price": "8.99",
+      "restaurant": "Tokyo Sushi",
+      "place": "Tokyo"
+    },
+    {
+      "id": 4,
+      "imageUrl": "/src/assets/Pad Thai.jpg",
+      "name": "Pad Thai",
+      "price": "10.99",
+      "restaurant": "Thai Kitchen",
+      "place": "Bangkok"
+    },
+    {
+      "id": 5,
+      "imageUrl": "/src/assets/burger.jpg",
+      "name": "Burger",
+      "price": "7.99",
+      "restaurant": "Burger Joint",
+      "place": "New York"
+    },
+    {
+      "id": 6,
+      "imageUrl": "/src/assets/tacos.jpg",
+      "name": "Tacos",
+      "price": "5.99",
+      "restaurant": "Taco Shack",
+      "place": "Mexico City"
+    },
+    {
+      "id": 7,
+      "imageUrl": "/src/assets/spaghetti.jpg",
+      "name": "Spaghetti Carbonara",
+      "price": "11.99",
+      "restaurant": "Italian Bistro",
+      "place": "Rome"
+    },
+    {
+      "id": 8,
+      "imageUrl": "/src/assets/fries.jpg",
+      "name": "French Fries",
+      "price": "3.99",
+      "restaurant": "Fast Food Corner",
+      "place": "Anywhere"
+    },
+    {
+      "id": 9,
+      "imageUrl": "/src/assets/salad.jpg",
+      "name": "Caesar Salad",
+      "price": "6.99",
+      "restaurant": "Green Bowl",
+      "place": "San Francisco"
+    },
+    {
+      "id": 10,
+      "imageUrl": "/src/assets/dumplings.jpg",
+      "name": "Pork Dumplings",
+      "price": "9.99",
+      "restaurant": "Dim Sum Delight",
+      "place": "Shanghai"
+    },
+    {
+      "id": 11,
+      "imageUrl": "/src/assets/steak.jpg",
+      "name": "Grilled Steak",
+      "price": "19.99",
+      "restaurant": "Steakhouse",
+      "place": "Dallas"
+    },
+    {
+      "id": 12,
+      "imageUrl": "/src/assets/ramen.jpg",
+      "name": "Ramen Bowl",
+      "price": "12.49",
+      "restaurant": "Ramen Hub",
+      "place": "Tokyo"
+    },
+    {
+      "id": 13,
+      "imageUrl": "/src/assets/sandwich.jpg",
+      "name": "Club Sandwich",
+      "price": "8.49",
+      "restaurant": "Sandwich Stop",
+      "place": "Chicago"
+    },
+    {
+      "id": 14,
+      "imageUrl": "/src/assets/cheesecake.jpg",
+      "name": "Cheesecake",
+      "price": "6.49",
+      "restaurant": "Sweet Treats",
+      "place": "Paris"
+    },
+    {
+      "id": 15,
+      "imageUrl": "/src/assets/icecream.jpg",
+      "name": "Vanilla Ice Cream",
+      "price": "3.49",
+      "restaurant": "Ice Cream Corner",
+      "place": "Los Angeles"
+    },
+    {
+      "id": 16,
+      "imageUrl": "/src/assets/samosa.jpg",
+      "name": "Samosa",
+      "price": "2.49",
+      "restaurant": "Spicy Snacks",
+      "place": "Mumbai"
+    },
+    {
+      "id": 17,
+      "imageUrl": "/src/assets/pancakes.jpg",
+      "name": "Blueberry Pancakes",
+      "price": "9.99",
+      "restaurant": "Breakfast Bliss",
+      "place": "Seattle"
+    },
+    {
+      "id": 18,
+      "imageUrl": "/src/assets/chowmein.jpg",
+      "name": "Chow Mein",
+      "price": "7.99",
+      "restaurant": "Chinese Delight",
+      "place": "Beijing"
+    },
+    {
+      "id": 19,
+      "imageUrl": "/src/assets/donuts.jpg",
+      "name": "Glazed Donuts",
+      "price": "4.99",
+      "restaurant": "Donut World",
+      "place": "Boston"
+    },
+    {
+      "id": 20,
+      "imageUrl": "/src/assets/lasagna.jpg",
+      "name": "Lasagna",
+      "price": "13.49",
+      "restaurant": "Little Italy",
+      "place": "Naples"
+    },
+    {
+      "id": 21,
+      "imageUrl": "/src/assets/fishchips.jpg",
+      "name": "Fish and Chips",
+      "price": "10.99",
+      "restaurant": "British Bites",
+      "place": "London"
+    },
+    {
+      "id": 22,
+      "imageUrl": "/src/assets/biryani.jpg",
+      "name": "Chicken Biryani",
+      "price": "14.49",
+      "restaurant": "Hyderabadi Kitchens",
+      "place": "Hyderabad"
+    },
+    {
+      "id": 23,
+      "imageUrl": "/src/assets/kebab.jpg",
+      "name": "Lamb Kebab",
+      "price": "18.99",
+      "restaurant": "Grill Masters",
+      "place": "Istanbul"
+    },
+    {
+      "id": 24,
+      "imageUrl": "/src/assets/paella.jpg",
+      "name": "Seafood Paella",
+      "price": "20.99",
+      "restaurant": "Spanish Delights",
+      "place": "Valencia"
+    },
+    {
+      "id": 25,
+      "imageUrl": "/src/assets/croissant.jpg",
+      "name": "Butter Croissant",
+      "price": "2.99",
+      "restaurant": "French Patisserie",
+      "place": "Paris"
+    }
+  ]
 }

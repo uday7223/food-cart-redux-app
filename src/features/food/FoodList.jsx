@@ -13,7 +13,7 @@ const FoodList = () => {
         }
     }, [status, dispatch]);
 
-    console.log('Redux items:', items); // Inspect data passed from Redux state
+    // console.log('Redux items:', items); // Inspect data passed from Redux state
 
 
     if (status === 'loading') {
@@ -26,7 +26,8 @@ const FoodList = () => {
 
     return (
         <div className="container mt-4">
-            <h2>Available Food</h2>
+          <div className="col-md-12">
+          <h2>Available Food</h2>
             <div className="row">
                 {items.length > 0 ? (
                     items.map((item) => (
@@ -36,6 +37,7 @@ const FoodList = () => {
                     <p>No items available.</p>
                 )}
             </div>
+          </div>
         </div>
     );
 };

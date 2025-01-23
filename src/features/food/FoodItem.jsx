@@ -7,7 +7,7 @@ const FoodItem = ({ item }) => {
     const dispatch = useDispatch();
 
     return (
-        <div className="col-md-6">
+        <div className="col-md-3 col-sm-5 col-xl-4 footItem-con">
             <div className="card mb-3">
                 <img
                     src={item.imageUrl}

@@ -1,20 +1,27 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { removeFromCart, updateQuantity } from './cartSlice';
+import { removeFromCart, updateQuantity, clearCart } from './cartSlice';
 
 const Cart = () => {
     const items = useSelector((state) => {
         console.log('Cart state:', state.cart);
         return state.cart?.items || [];
     });
+
+    
         const dispatch = useDispatch();
 
-    const total = items.reduce((sum, item) => sum + item.price * item.quantity, 0);
+    const total = items.reduce((sum, item) => sum + item.price * item.quantity,0);
 
     return (
-        <div className="container mt-4">
-           <div className="col-md-6">
-           <h2>Cart</h2>
+        <div className="container mt-3 cart-con me-2">
+           <div className="col-md-12">
+            <div className="cart-header d-flex justify-content-between border-bottom mb-2 pb-2">
+            <h2 className='mt-2'>Cart</h2>
+            <button className='btn btn-danger mt-2'
+            onClick={()=>dispatch(clearCart())}
+            >CLEAR CART</button>
+            </div>
             <ul className="list-group">
                 {items.map((item) => (
                     <li key={item.id} className="list-group-item d-flex justify-content-between align-items-center">
@@ -23,9 +30,16 @@ const Cart = () => {
                             <button
                                 className="btn btn-sm btn-warning me-2"
                                 onClick={() => dispatch(updateQuantity({ id: item.id, quantity: item.quantity - 1 }))}
-                                disabled={item.quantity === 1}
+                                // disabled={item.quantity === 1}
                             >
                                 -
+                            </button>
+                            <button
+                                className="btn btn-sm btn-primary me-2"
+                                onClick={() => dispatch(updateQuantity({ id: item.id, quantity: item.quantity + 1 }))}
+                                // disabled={item.quantity === 1}
+                            >
+                                +
                             </button>
                             <button
                                 className="btn btn-sm btn-danger"
