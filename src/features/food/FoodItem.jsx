@@ -1,11 +1,12 @@
-import React from 'react';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../cart/cartSlice';
-import pizza from "../../assets/pizza.jpg"
+import PropTypes from 'prop-types';
+
+// import pizza from "../../assets/pizza.jpg"
 
 const FoodItem = ({ item }) => {
     const dispatch = useDispatch();
-
+   
     return (
         <div className="col-md-3 col-sm-5 col-xl-4 footItem-con">
             <div className="card mb-3">

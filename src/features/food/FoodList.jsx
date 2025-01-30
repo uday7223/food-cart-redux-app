@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import  { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchFoodItems } from './foodSlice';
 import FoodItem from './FoodItem';
@@ -6,12 +6,25 @@ import FoodItem from './FoodItem';
 const FoodList = () => {
     const dispatch = useDispatch();
     const { items, status } = useSelector((state) => state.food || { items: [], status: 'idle' });
+    const searchTerm = useSelector((state) => state.search.searchTerm.toLowerCase()); // Get search term from Redux
+
+      // Filter food items based on search term
+      const filteredItems = items.filter((item) =>
+       {
+            const filteredItem =  item.name.toLowerCase().includes(searchTerm);
+            return filteredItem;
+       }
+      
+      
+    );
 
     useEffect(() => {
         if (status === 'idle') {
             dispatch(fetchFoodItems());
         }
     }, [status, dispatch]);
+
+   
 
     // console.log('Redux items:', items); // Inspect data passed from Redux state
 
@@ -29,8 +42,8 @@ const FoodList = () => {
           <div className="col-md-12">
           <h2>Available Food</h2>
             <div className="row">
-                {items.length > 0 ? (
-                    items.map((item) => (
+                {filteredItems.length > 0 ? (
+                    filteredItems.map((item) => (
                         <FoodItem key={item.id} item={item} />
                     ))
                 ) : (

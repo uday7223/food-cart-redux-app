@@ -30,7 +30,7 @@ const Cart = () => {
                             <button
                                 className="btn btn-sm btn-warning me-2"
                                 onClick={() => dispatch(updateQuantity({ id: item.id, quantity: item.quantity - 1 }))}
-                                // disabled={item.quantity === 1}
+                                disabled={item.quantity === 1}
                             >
                                 -
                             </button>

@@ -1,7 +1,11 @@
-import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { setSearchTerm } from '../features/food/foodSlice';
 import '../styles/header.css'; // Optional custom styles
 
 const Header = () => {
+    const dispatch = useDispatch();
+    const searchTerm = useSelector((state) => state.food.searchTerm);
+
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
             <div className="container">
@@ -50,12 +54,14 @@ const Header = () => {
                     </ul>
 
                     {/* Search Bar */}
-                    <form className="d-flex ms-lg-3">
+                    <form className="d-flex ms-lg-3" onSubmit={(e) => e.preventDefault()}>
                         <input
                             className="form-control me-2"
                             type="search"
                             placeholder="Search for food..."
                             aria-label="Search"
+                            value={searchTerm}
+                            onChange={(e) => dispatch(setSearchTerm(e.target.value))}
                         />
                         <button className="btn btn-outline-primary" type="submit">
                             Search
