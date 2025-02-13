@@ -1,13 +1,39 @@
+.global{
+    .cart-con{
+        // border: 1px solid black;
+        position: sticky;
+        top: 10px;
+        height:fit-content;
+        width: 40vw;
+    }
+    .header{
 
 
-.cart-con{
-    // border: 1px solid black;
-    position: sticky;
-    top: 10px;
-    height:fit-content;
-    width: 40vw;
-
-
-
+        .logo{
+  --h: 1.2em;
+  font-size: var(--h);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+//   linea-height: var(--h);
+  color: #0000;
+  overflow: hidden;
+  text-shadow: 
+    0 var(--_t,var(--h)) #fff,
+    0 0 var(--_c,#000);
+  background: 
+    linear-gradient(#1095c1 0 0) 
+    bottom/100% var(--_d, 0) no-repeat;
+  transition: 0.3s;
 }
+.logo:hover {
+  --_d: 100%;
+  --_t: 0;
+  --_c: #0000;
+}
+       
+        
+    }
+    
+}
+
 

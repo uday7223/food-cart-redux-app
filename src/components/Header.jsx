@@ -7,17 +7,20 @@ const Header = () => {
     const searchTerm = useSelector((state) => state.food.searchTerm);
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light shadow-sm header">
             <div className="container">
                 {/* Logo */}
                 <a className="navbar-brand fw-bold text-primary" href="/">
-                    <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/1/13/Swiggy_logo.png"
+                    {/* <img
+                        src={logo}
                         alt="Swiggy Logo"
-                        className="me-2"
+                        className="me-2 logo"
                         style={{ height: '30px' }}
-                    />
-                    Swiggy Clone
+                    /> */}
+
+                    <div className="logo px-2">
+                        Hungry Bites🍴
+                    </div>
                 </a>
 
                 {/* Toggle button for mobile */}
